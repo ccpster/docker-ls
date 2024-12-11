@@ -2,7 +2,7 @@
 FROM golang:latest AS build
 ENV CGO_ENABLED=0
 ENV GOOS=linux
-ENV GOARCH=amd64
+ENV GOARCH=arm64
 ADD . /go/src/github.com/mayflower/docker-ls
 WORKDIR /go/src/github.com/mayflower/docker-ls
 RUN set -ex \
